@@ -1,3 +1,5 @@
+" vundle setup
+source .vundle
 set shiftwidth=2
 set tabstop=2
 filetype indent plugin on

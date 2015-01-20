@@ -1,0 +1,11 @@
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim/
+"call vundle#rc()
+call vundle#begin()
+Plugin 'gmarik/vundle'
+Plugin 'scrooloose/nerdtree'
+"Plugin 'pangloss/vim-javascript'
+"Plugin 'jelera/vim-javascript-syntax'
+"Plugin 'Valloric/YouCompleteMe'
+call vundle#end() 
