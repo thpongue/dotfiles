@@ -1,5 +1,6 @@
 " vundle setup
 source ~/.vundle
+" comment these up 
 set shiftwidth=2
 set tabstop=2
 filetype indent plugin on
@@ -7,5 +8,6 @@ set background=dark
 set number
 set clipboard=unnamedplus
 syntax on
+" nerdtree setup
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
