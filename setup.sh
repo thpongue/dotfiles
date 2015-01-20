@@ -6,6 +6,6 @@ do
 	#symlink syntax: ln -s <source> <target>
 	filenameWithoutPath=$(basename $filename)
 	filenameWithoutExtension="${filenameWithoutPath%.*}"
-	unlink $filenameWithoutPath
+	#unlink $filenameWithoutPath
 	ln -s $filename ~/.$filenameWithoutExtension
 done
