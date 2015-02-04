@@ -8,10 +8,3 @@ set background=dark
 set number
 set clipboard=unnamedplus
 syntax on
-:set list
-" NERDtree setup
-" launch NERDtree but and select other window to start
-autocmd vimenter * NERDTree
-autocmd vimenter * wincmd w
-" when closing, if NERDtree is the only window left then close vim
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
