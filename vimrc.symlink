@@ -7,6 +7,8 @@ filetype indent plugin on
 set background=dark
 set number
 set clipboard=unnamedplus
+" make it possible to view different buffers without having to save first
+set hidden
 syntax on
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
