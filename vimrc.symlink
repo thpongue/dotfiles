@@ -23,3 +23,5 @@ map <leader>= :bd<cr>
 " comment / uncomment
 map <leader>/ :s/^/\/\/<cr>
 map <leader>? :s/^\/\//<cr>
+" regex replace in file
+map <leader>r :%s/
