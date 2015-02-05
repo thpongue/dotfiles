@@ -17,11 +17,17 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 " mappings
 :let mapleader = "-"
 " enable easy switching between buffers
+" next/previous
 map <leader>- :bn<cr>
-map <leader>_ :bp<cr>
-map <leader>= :bd<cr>
+" create new buffer and prompt for filename (there must be a better approach than add space,
+" remove space to then enable save?)
+map <leader><enter> :enew<cr>i<space><bs><esc>:f 
+" remove buffer
+map <leader><bs> :bd!<cr>
 " comment / uncomment
 map <leader>/ :s/^/\/\/<cr>
 map <leader>? :s/^\/\//<cr>
 " regex replace in file
 map <leader>r :%s/
+" ctrlp
+map <leader>p :CtrlP<cr>
