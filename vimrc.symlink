@@ -21,7 +21,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 map <leader>- :bn<cr>
 " create new buffer and prompt for filename (there must be a better approach than add space,
 " remove space to then enable save?)
-map <leader><enter> :enew<cr>i<space><bs><esc>:f 
+map <leader>= :enew<cr>i<space><bs><esc>:f 
 " remove buffer
 map <leader><bs> :bd!<cr>
 " comment / uncomment
