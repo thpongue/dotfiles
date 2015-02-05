@@ -14,3 +14,12 @@ syntax on
 let g:airline#extensions#tabline#enabled = 1
 " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
+" mappings
+:let mapleader = "-"
+" enable easy switching between buffers
+map <leader>- :bn<cr>
+map <leader>_ :bp<cr>
+map <leader>= :bd<cr>
+" comment / uncomment
+map <leader>/ :s/^/\/\/<cr>
+map <leader>? :s/^\/\//<cr>
