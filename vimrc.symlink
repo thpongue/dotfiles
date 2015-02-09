@@ -40,10 +40,6 @@ map <leader>r :%s/
 map <leader>p :CtrlP<cr>
 " easier switch between windows
 map <leader>w <C-W>W
-" easier open file
-map <leader>o :E<cr>
-" easier close netrw
-map <leader>c :b<cr>
 " Use ; instead of : to enter command
 nnoremap ; :
 " enable the silver searcher
@@ -62,3 +58,16 @@ nnoremap <leader>n :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 " bind <leader>s to grep shortcut
 nnoremap <leader>s :Ag<SPACE>
 command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+" Default netrw to tree mode
+let g:netrw_liststyle=3
+" Change netrw directory to the current buffer when opening files.
+set autochdir
+" leader o toggles netrw file explorer 
+function! ToggleNetrw()
+	if &ft ==# 'netrw'
+		:execute ":b"
+	else
+		:execute ":E"
+	endif
+endfunction
+map <leader>o :call ToggleNetrw()<cr>
