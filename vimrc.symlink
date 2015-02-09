@@ -40,6 +40,10 @@ map <leader>r :%s/
 map <leader>p :CtrlP<cr>
 " easier switch between windows
 map <leader>w <C-W>W
+" easier open file
+map <leader>o :E<cr>
+" easier close netrw
+map <leader>c :b<cr>
 " Use ; instead of : to enter command
 nnoremap ; :
 " enable the silver searcher
