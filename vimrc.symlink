@@ -39,7 +39,8 @@ map <leader>r :%s/
 " ctrlp
 map <leader>p :CtrlP<cr>
 " easier switch between windows
-map <leader>w <C-W>W
+map <leader>w <c-w>w
+map <leader>x i<c-x>
 " Use ; instead of : to enter command
 nnoremap ; :
 " enable the silver searcher
