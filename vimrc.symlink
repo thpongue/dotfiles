@@ -41,6 +41,8 @@ map <leader>p :CtrlP<cr>
 " easier switch between windows
 map <leader>w <c-w>w
 map <leader>x i<c-x>
+" add double space to the end of markdown files so they appear correctly
+map <leader>q :%s/\(  \)\@<!$/  <cr>
 " Use ; instead of : to enter command
 nnoremap ; :
 " enable the silver searcher
