@@ -26,6 +26,7 @@ let mapleader = "-"
 " enable easy switching between buffers
 " next/previous
 map <leader>- :bn<cr>
+map <leader>0 :bp<cr>
 " create new buffer and prompt for filename (there must be a better approach than add space,
 " remove space to then enable save?)
 map <leader>= :enew<cr>i<space><bs><esc>:f 
