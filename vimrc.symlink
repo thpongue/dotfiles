@@ -27,7 +27,7 @@ let mapleader = "-"
 " next/previous
 map <leader>- :bn<cr>
 map <leader>0 :bp<cr>
-" create new buffer and prompt for filename (there must be a better approach than add space,
+" create new buffer and prompt for filename (there must be a better approach than add space)
 " remove space to then enable save?)
 map <leader>= :enew<cr>i<space><bs><esc>:f 
 " remove buffer
@@ -73,3 +73,10 @@ function! ToggleNetrw()
 	endif
 endfunction
 map <leader>o :call ToggleNetrw()<cr>
+augroup vimrc
+	au BufReadPre * setlocal foldmethod=indent
+augroup END
+setlocal foldtext=MyFoldText()
+function! MyFoldText()
+  return "za/zi"
+endfunction
