@@ -36,7 +36,8 @@ map <leader><bs> :bd!<cr>
 map <leader>/ :s/^/\/\/<cr>
 map <leader>? :s/^\/\//<cr>
 " regex replace in file
-map <leader>r :%s/
+map <leader>r :%s/\v
+map <leader>l :s/\v
 " ctrlp
 map <leader>p :CtrlP<cr>
 " easier switch between windows
@@ -80,3 +81,6 @@ setlocal foldtext=MyFoldText()
 function! MyFoldText()
   return "za/zi"
 endfunction
+map <leader>t :r ~/vimfiles/
+set noswapfile
+map / /\v
