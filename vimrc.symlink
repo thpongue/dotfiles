@@ -84,3 +84,4 @@ endfunction
 map <leader>t :r ~/vimfiles/
 set noswapfile
 map / /\v
+map ? ?\v

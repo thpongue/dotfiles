@@ -7,4 +7,5 @@ alias ga="git add ."
 alias gp="git push"
 # Setting PATH for Python 3.4
 PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+PATH="/usr/local/Cellar/macvim/7.4-73_1/bin:${PATH}"
 export PATH
