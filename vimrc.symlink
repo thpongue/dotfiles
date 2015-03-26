@@ -74,13 +74,6 @@ function! ToggleNetrw()
 	endif
 endfunction
 map <leader>o :call ToggleNetrw()<cr>
-augroup vimrc
-	au BufReadPre * setlocal foldmethod=indent
-augroup END
-setlocal foldtext=MyFoldText()
-function! MyFoldText()
-  return "za/zi"
-endfunction
 map <leader>t :r ~/vimfiles/
 set noswapfile
 map / /\v
