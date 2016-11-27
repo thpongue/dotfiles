@@ -40,8 +40,9 @@ do
 	fi
 
 	# create symlink
-	echo -e "creating symlink\n"
-	ln -s $filename ~/.$filenameWithoutExtension
+	ABS_PATH=`cd "$1"; pwd` # double quotes for paths that contain spaces etc..
+	echo -e "creating symlink for" $ABS_PATH/$filenameWithoutPath "\n"
+	ln -s -f $ABS_PATH/$filenameWithoutPath ~/.$filenameWithoutExtension
 done
 
 echo "done!"
