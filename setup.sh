@@ -32,7 +32,7 @@ do
 				mkdir $directoryToStoreArchiveFiles
 			fi
 
-			# re-add this once we know it works
+			# archive existing file
 			echo "copying" $existingFileToReplace "into" $directoryToStoreArchiveFiles
 			mv $existingFileToReplace $directoryToStoreArchiveFiles
 
