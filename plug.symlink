@@ -8,5 +8,6 @@ Plug 'bling/vim-airline'
 Plug 'pangloss/vim-javascript'
 Plug 'Raimondi/delimitMate'
 Plug 'Valloric/YouCompleteMe'
+Plug 'Raimondi/delimitMate'
 filetype plugin indent on                   " required!
 call plug#end()
