@@ -1,5 +1,5 @@
-" vundle setup
-source ~/.vundle
+" plug setup
+source ~/.plug
 filetype indent plugin on
 " comment these up
 set shiftwidth=2
