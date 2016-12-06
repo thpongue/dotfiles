@@ -34,7 +34,8 @@ do
 
 			# archive existing file
 			echo "copying" $existingFileToReplace "into" $directoryToStoreArchiveFiles
-			mv $existingFileToReplace $directoryToStoreArchiveFiles
+			cp -L $existingFileToReplace $directoryToStoreArchiveFiles
+			rm $existingFileToReplace
 
 		else
 			echo "not found"
