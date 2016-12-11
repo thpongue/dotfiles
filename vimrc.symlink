@@ -16,6 +16,8 @@ set clipboard=unnamed
 set hidden
 " lines of code will not wrap to the next line
 set nowrap
+" always update file if changed
+set autoread
 syntax on
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
@@ -62,7 +64,7 @@ endif
 nnoremap <leader>n :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 " bind <leader>s to grep shortcut
 nnoremap <leader>s :Ag<SPACE>
-command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+" command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 " Change netrw directory to the current buffer when opening files.
 set autochdir
 " leader o toggles netrw file explorer 
