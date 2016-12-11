@@ -9,5 +9,6 @@ Plug 'Raimondi/delimitMate'
 Plug 'Valloric/YouCompleteMe'
 Plug 'Raimondi/delimitMate'
 Plug 'airblade/vim-gitgutter'
+Plug 'scrooloose/nerdcommenter'
 filetype plugin indent on                   " required!
 call plug#end()

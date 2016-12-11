@@ -1,5 +1,6 @@
 " plug setup
 source ~/.plug
+" enable indent and plugin flags
 filetype indent plugin on
 " comment these up
 set shiftwidth=2
@@ -34,9 +35,6 @@ map <leader>0 :bp<cr>
 map <leader>= :enew<cr>i<space><bs><esc>:f 
 " remove buffer
 map <leader><bs> :bd!<cr>
-" comment / uncomment
-map <leader>/ :s/^/\/\/<cr>
-map <leader>? :s/^\/\//<cr>
 " regex replace in file
 map <leader>r :%s/\v
 map <leader>l :s/\v
