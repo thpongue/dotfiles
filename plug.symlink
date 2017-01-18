@@ -10,5 +10,6 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'Raimondi/delimitMate'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdcommenter'
+Plug 'leafgarland/typescript-vim'
 filetype plugin indent on                   " required!
 call plug#end()
