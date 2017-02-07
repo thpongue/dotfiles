@@ -83,3 +83,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+
+replaceRecursively() {
+	sed -i '' "s/$1/$2/g" **/*.*  
+}
+alias repl=replaceRecursively
